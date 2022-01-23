@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Commande</h2>
+    <form action="./Sauvgarder.php" method="get" onsubmit="return test()">
+        <label for="name">nom et prenom :</label>
+        <input type="text" name="name" id="name">
+        <label for="adr">adresse :</label>
+        <input type="text" name="adr" id="adr"><br>
+        <label for="menu">menu</label>
+        <select name="menu" id="menu">
+            <option value="" disabled hidden selected>choissier un plat</option>
+            <option value="Couscous">Couscous</option>
+            <option value="Spaghetti">Spaghetti</option>
+            <option value="Polonaise">Polonaise</option>
+        </select>
+        <label for="qt">quantite</label>
+        <input type="text" name="qt" id="qt">
+        <input type="submit" value="Valider">
+        <input type="reset" value="Annuler">
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
